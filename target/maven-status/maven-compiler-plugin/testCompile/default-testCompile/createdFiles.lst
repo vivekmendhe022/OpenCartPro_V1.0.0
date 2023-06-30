@@ -1,5 +1,8 @@
 Test\TotalCustomers.class
+Test\CreateCategories.class
 UserTestScripts\UserRegistrationTest.class
 Test\Test1.class
 Test\CustomerDetails.class
+Test\Regster.class
 Test\LoginAdminTest.class
+AdminTestScripts\CreateCategoriesTest.class
