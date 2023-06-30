@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.CustomerDetails">
+      <class name="Test.CreateCategories">
         <methods>
           <include name="BCConfig"/>
           <include name="ACConfig"/>
+          <include name="createCategoriesTest"/>
           <include name="BSConfig"/>
           <include name="ASConfig"/>
-          <include name="totalCustomers"/>
           <include name="BMConfig"/>
           <include name="AMConfig"/>
         </methods>
-      </class> <!-- Test.CustomerDetails -->
+      </class> <!-- Test.CreateCategories -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -43,7 +43,7 @@ public class WebDriverUtility {
 	 * @param d
 	 */
 	public void waitForPageLoad(WebDriver d) {
-		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 
 	/**
