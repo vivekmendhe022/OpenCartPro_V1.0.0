@@ -10,6 +10,7 @@ com\object\repository\user\RegistrationPage.class
 com\object\repository\user\RegisterAccountInfoPage.class
 com\generic\utilities\BaseClassUser.class
 com\generic\utilities\PropertyFileUtility.class
+com\object\repository\admin\CategoryPage.class
 com\object\repository\user\HomePage.class
 com\object\repository\admin\LogoutAdmin.class
 com\generic\utilities\JavaUtility.class
