@@ -11,9 +11,9 @@ import com.generic.utilities.BaseClass;
 import com.generic.utilities.BaseClassAdmin;
 import com.generic.utilities.BaseClassUser;
 import com.object.repository.user.HomePage;
-import com.object.repository.user.RegistartionInfoPage;
-import com.object.repository.user.RegisterAccountInfoPage;
-import com.object.repository.user.RegistrationPage;
+import com.object.repository.user.registration.RegistartionInfoPage;
+import com.object.repository.user.registration.RegisterAccountInfoPage;
+import com.object.repository.user.registration.RegistrationPage;
 
 @Listeners(com.generic.utilities.ListenersImplementationUtility.class)
 public class UserRegistrationTest extends BaseClassUser {

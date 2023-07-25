@@ -47,8 +47,8 @@ public class ListenersImplementationUtility implements ITestListener {
 		test.log(Status.WARNING, result.getThrowable());
 
 		// Take Screen Shot
-		String scr = methodName + " - " + new JavaUtility().getSystemDateInFormate();
 		WebDriverUtility wutil = new WebDriverUtility();
+		String scr = methodName + " - " + new JavaUtility().getSystemDateInFormate();
 		try {
 			String path = wutil.takeScreenShot(BaseClass.SDriver, scr);
 			test.addScreenCaptureFromPath(path);
