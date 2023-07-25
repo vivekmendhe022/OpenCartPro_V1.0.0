@@ -13,6 +13,9 @@ public class HomePage {
 	@FindBy(linkText = "Register")
 	private WebElement Register;
 
+	@FindBy(linkText = "Login")
+	private WebElement LoginLinkText;
+
 	public HomePage(WebDriver d) {
 		PageFactory.initElements(d, this);
 	}
@@ -20,6 +23,11 @@ public class HomePage {
 	public void clickOnMyAccountIcon() {
 		Account.click();
 		Register.click();
+	}
+
+	public void clickOnLoginLink() {
+		Account.click();
+		LoginLinkText.click();
 	}
 
 }

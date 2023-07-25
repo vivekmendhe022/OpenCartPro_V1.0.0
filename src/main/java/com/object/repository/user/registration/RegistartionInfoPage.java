@@ -1,4 +1,4 @@
-package com.object.repository.user;
+package com.object.repository.user.registration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
