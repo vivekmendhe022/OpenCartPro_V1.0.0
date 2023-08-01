@@ -47,14 +47,15 @@ public class ListenersImplementationUtility implements ITestListener {
 		test.log(Status.WARNING, result.getThrowable());
 
 		// Take Screen Shot
-		WebDriverUtility wutil = new WebDriverUtility();
 		String scr = methodName + " - " + new JavaUtility().getSystemDateInFormate();
+		WebDriverUtility wutil = new WebDriverUtility();
 		try {
 			String path = wutil.takeScreenShot(BaseClass.SDriver, scr);
 			test.addScreenCaptureFromPath(path);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
 	}
 
 	public void onTestSkipped(ITestResult result) {

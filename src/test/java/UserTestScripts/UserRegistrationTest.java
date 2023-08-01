@@ -15,7 +15,7 @@ import com.object.repository.user.registration.RegistartionInfoPage;
 import com.object.repository.user.registration.RegisterAccountInfoPage;
 import com.object.repository.user.registration.RegistrationPage;
 
-@Listeners(com.generic.utilities.ListenersImplementationUtility.class)
+//@Listeners(com.generic.utilities.ListenersImplementationUtility.class)
 public class UserRegistrationTest extends BaseClassUser {
 
 	int r = jutil.getRandomNumber();
