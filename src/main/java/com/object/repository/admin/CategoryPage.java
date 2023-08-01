@@ -33,6 +33,9 @@ public class CategoryPage extends WebDriverUtility {
 	@FindBy(xpath = "//i[@class='fa-solid fa-floppy-disk']")
 	private WebElement SaveIcon;
 
+	@FindBy(linkText = "Products")
+	private WebElement ProductsLinkText;
+
 	public CategoryPage(WebDriver d) {
 		PageFactory.initElements(d, this);
 	}
@@ -81,6 +84,11 @@ public class CategoryPage extends WebDriverUtility {
 		waitForElementToBeVisible(d, SEODefaultTextField);
 		SEODefaultTextField.sendKeys(SEODEFAULT);
 		SaveIcon.click();
+	}
+
+	public void clickOnProducts() {
+		CatalogDropDownMenu.click();
+		ProductsLinkText.click();
 	}
 
 }
