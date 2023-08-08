@@ -78,7 +78,7 @@ public class CategoryPage extends WebDriverUtility {
 		CategoriesLink.click();
 		CreatCaregoriesAddIcon.click();
 		CategoryNameTextField.sendKeys(CATEGORYNAME);
-		scrollBy(d, 0, 500);
+		scrollBy(d);
 		MetaTagTitleTextField.sendKeys(METATAGTITLE);
 		SEOTabLink.click();
 		waitForElementToBeVisible(d, SEODefaultTextField);

@@ -8,10 +8,10 @@
           <include name="BMConfig"/>
           <include name="AMConfig"/>
           <include name="userRegistrationTest"/>
-          <include name="ACConfig"/>
           <include name="BSConfig"/>
-          <include name="ASConfig"/>
+          <include name="ACConfig"/>
           <include name="BCConfig"/>
+          <include name="ASConfig"/>
         </methods>
       </class> <!-- UserTestScripts.UserRegistrationTest -->
     </classes>

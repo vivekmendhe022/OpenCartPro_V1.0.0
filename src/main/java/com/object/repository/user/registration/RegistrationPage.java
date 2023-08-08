@@ -68,8 +68,10 @@ public class RegistrationPage extends WebDriverUtility {
 		LastNameTextField.sendKeys(LASTNAME);
 		EmailTextField.sendKeys(EMAIL);
 		PasswordTextField.sendKeys(PASSWORD);
+		scrollBy(d);
+		waitForElementToBeVisible(d, SubscribeCircularToggleButton);
 		SubscribeCircularToggleButton.click();
-		scrollBy(d, 0, 500);
+		scrollBy(d);
 		waitForElementToBeVisible(d, PrivacyPolicyCircularToggleButton);
 		PrivacyPolicyCircularToggleButton.click();
 		ContinueBtn.click();

@@ -3,6 +3,7 @@ Test\CreateCategories.class
 Test\CustomerDetails.class
 Test\LoginAdminTest.class
 Test\TotalCustomers.class
+AdminTestScripts\AddProductTest.class
 UserTestScripts\UserRegistrationTest.class
 Test\Test1.class
 Test\Regster.class

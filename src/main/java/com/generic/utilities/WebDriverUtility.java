@@ -53,7 +53,7 @@ public class WebDriverUtility {
 	 * @param element
 	 */
 	public void waitForElementToBeVisible(WebDriver d, WebElement element) {
-		WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
@@ -248,9 +248,9 @@ public class WebDriverUtility {
 	 * @param x
 	 * @param y
 	 */
-	public void scrollBy(WebDriver d, int X, int Y) {
+	public void scrollBy(WebDriver d) {
 		JavascriptExecutor js = (JavascriptExecutor) d;
-		js.executeScript("window.scrollBy(" + X + "," + Y + ")");
+		js.executeScript("window.scrollBy(0,500)");
 	}
 
 	/**

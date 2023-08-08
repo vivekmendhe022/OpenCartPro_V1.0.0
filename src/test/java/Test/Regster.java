@@ -37,7 +37,7 @@ public class Regster extends BaseClassUser {
 		EmailTextField.sendKeys(r + "manoj123@gmail.com");
 		PasswordTextField.sendKeys("123456");
 		SubscribeCircularToggleButton.click();
-		wutil.scrollBy(d, 0, 500);
+		wutil.scrollBy(d);
 		wutil.waitForElementToBeVisible(d, PrivacyPolicyCircularToggleButton);
 		PrivacyPolicyCircularToggleButton.click();
 		ContinueBtn.click();

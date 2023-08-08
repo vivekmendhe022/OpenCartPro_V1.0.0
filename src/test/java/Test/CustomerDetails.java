@@ -30,7 +30,7 @@ public class CustomerDetails extends BaseClassAdmin {
 
 		writeWebElementListToExcel("CustomerList.xlsx", "Customer List", customerNameList);
 		WebElement next = d.findElement(By.xpath("//a[@class='page-link']/../following-sibling::li[1]"));
-		wutil.scrollBy(d, 0, 500);
+		wutil.scrollBy(d);
 		wutil.waitForElementToBeVisible(d, next);
 		next.click();
 		writeWebElementListToExcel("CustomerList.xlsx", "Customer List", customerNameList);
