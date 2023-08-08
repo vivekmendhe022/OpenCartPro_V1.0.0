@@ -15,13 +15,12 @@ import com.object.repository.user.registration.RegistartionInfoPage;
 import com.object.repository.user.registration.RegisterAccountInfoPage;
 import com.object.repository.user.registration.RegistrationPage;
 
-//@Listeners(com.generic.utilities.ListenersImplementationUtility.class)
+@Listeners(com.generic.utilities.Listneres.class)
 public class UserRegistrationTest extends BaseClassUser {
-
-	int r = jutil.getRandomNumber();
 
 	@Test
 	public void userRegistrationTest() throws EncryptedDocumentException, IOException {
+		int r = jutil.getRandomNumber();
 
 		String ExpectedRegistrationHeader = "Your Account Has Been Created!";
 
@@ -38,6 +37,7 @@ public class UserRegistrationTest extends BaseClassUser {
 
 		RegistrationPage registrationPage = new RegistrationPage(d);
 		registrationPage.createRegistrationForUser(d, FIRSTNAME, LASTNAME, r + EMAIL, PASSWORD);
+
 		RegistartionInfoPage registartionInfoPage = new RegistartionInfoPage(d);
 		String registrationHeader = registartionInfoPage.getRegistrationHeader();
 		Assert.assertTrue(registrationHeader.equalsIgnoreCase(ExpectedRegistrationHeader));

@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -47,8 +48,11 @@ public class BaseClass {
 
 		// LAUNCH THE BROWSER
 		if (BROWSER.equalsIgnoreCase("chrome")) {
+			ChromeOptions options = new ChromeOptions();
+			options.setBinary("D:/Softwares/chrome-win64/chrome-win64/chrome.exe");
+
 			WebDriverManager.chromedriver().setup();
-			d = new ChromeDriver();
+			d = new ChromeDriver(options);
 			System.out.println("===== " + BROWSER + " Browser Launch =====");
 		} else if (BROWSER.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
@@ -74,10 +78,11 @@ public class BaseClass {
 
 	@BeforeMethod(groups = { "SmokeSuit", "RegressionSuit" })
 	public void BMConfig() throws IOException {
-		/*String USERNAME = putil.readDatafromPropertyFile("admin_username");
-		String PASSWORD = putil.readDatafromPropertyFile("admin_passowrd");
-		LoginAdmin adminLogin = new LoginAdmin(d);
-		adminLogin.loginToAdmin(USERNAME, PASSWORD);*/
+		/*
+		 * String USERNAME = putil.readDatafromPropertyFile("admin_username"); String
+		 * PASSWORD = putil.readDatafromPropertyFile("admin_passowrd"); LoginAdmin
+		 * adminLogin = new LoginAdmin(d); adminLogin.loginToAdmin(USERNAME, PASSWORD);
+		 */
 	}
 
 	@AfterMethod(groups = { "SmokeSuit", "RegressionSuit" })

@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-26T02:02:19 IST" name="Suite" finished-at="2023-07-26T02:02:30 IST" duration-ms="10306">
+  <suite started-at="2023-08-08T22:51:27 IST" name="Surefire suite" finished-at="2023-08-08T22:51:34 IST" duration-ms="6682">
     <groups>
     </groups>
-    <test started-at="2023-07-26T02:02:19 IST" name="Test" finished-at="2023-07-26T02:02:30 IST" duration-ms="10306">
-      <class name="UserTestScripts.UserLoginTest">
-        <test-method is-config="true" signature="BSConfig()[pri:0, instance:UserTestScripts.UserLoginTest@6b927fb]" started-at="2023-07-26T02:02:19 IST" name="BSConfig" finished-at="2023-07-26T02:02:19 IST" duration-ms="9" status="PASS">
+    <test started-at="2023-08-08T22:51:27 IST" name="Surefire test" finished-at="2023-08-08T22:51:34 IST" duration-ms="6682">
+      <class name="UserTestScripts.UserRegistrationTest">
+        <test-method is-config="true" signature="BSConfig()[pri:0, instance:UserTestScripts.UserRegistrationTest@5cee5251]" started-at="2023-08-08T22:51:27 IST" name="BSConfig" finished-at="2023-08-08T22:51:27 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BSConfig -->
-        <test-method is-config="true" signature="BCConfig()[pri:0, instance:UserTestScripts.UserLoginTest@6b927fb]" started-at="2023-07-26T02:02:19 IST" name="BCConfig" finished-at="2023-07-26T02:02:24 IST" duration-ms="4579" status="PASS">
+        <test-method is-config="true" signature="BCConfig()[pri:0, instance:UserTestScripts.UserRegistrationTest@5cee5251]" started-at="2023-08-08T22:51:28 IST" name="BCConfig" finished-at="2023-08-08T22:51:31 IST" duration-ms="3347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BCConfig -->
-        <test-method is-config="true" signature="BMConfig()[pri:0, instance:UserTestScripts.UserLoginTest@6b927fb]" started-at="2023-07-26T02:02:24 IST" name="BMConfig" finished-at="2023-07-26T02:02:24 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="BMConfig()[pri:0, instance:UserTestScripts.UserRegistrationTest@5cee5251]" started-at="2023-08-08T22:51:31 IST" name="BMConfig" finished-at="2023-08-08T22:51:31 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BMConfig -->
-        <test-method signature="loginAsUserToApplication()[pri:0, instance:UserTestScripts.UserLoginTest@6b927fb]" started-at="2023-07-26T02:02:24 IST" name="loginAsUserToApplication" finished-at="2023-07-26T02:02:29 IST" duration-ms="5409" status="PASS">
+        <test-method signature="userRegistrationTest()[pri:0, instance:UserTestScripts.UserRegistrationTest@5cee5251]" started-at="2023-08-08T22:51:31 IST" name="userRegistrationTest" finished-at="2023-08-08T22:51:34 IST" duration-ms="2608" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAsUserToApplication -->
-        <test-method is-config="true" signature="AMConfig()[pri:0, instance:UserTestScripts.UserLoginTest@6b927fb]" started-at="2023-07-26T02:02:29 IST" name="AMConfig" finished-at="2023-07-26T02:02:29 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- userRegistrationTest -->
+        <test-method is-config="true" signature="AMConfig()[pri:0, instance:UserTestScripts.UserRegistrationTest@5cee5251]" started-at="2023-08-08T22:51:34 IST" name="AMConfig" finished-at="2023-08-08T22:51:34 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AMConfig -->
-        <test-method is-config="true" signature="ACConfig()[pri:0, instance:UserTestScripts.UserLoginTest@6b927fb]" started-at="2023-07-26T02:02:29 IST" name="ACConfig" finished-at="2023-07-26T02:02:30 IST" duration-ms="292" status="PASS">
+        <test-method is-config="true" signature="ACConfig()[pri:0, instance:UserTestScripts.UserRegistrationTest@5cee5251]" started-at="2023-08-08T22:51:34 IST" name="ACConfig" finished-at="2023-08-08T22:51:34 IST" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ACConfig -->
-        <test-method is-config="true" signature="ASConfig()[pri:0, instance:UserTestScripts.UserLoginTest@6b927fb]" started-at="2023-07-26T02:02:30 IST" name="ASConfig" finished-at="2023-07-26T02:02:30 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="ASConfig()[pri:0, instance:UserTestScripts.UserRegistrationTest@5cee5251]" started-at="2023-08-08T22:51:34 IST" name="ASConfig" finished-at="2023-08-08T22:51:34 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ASConfig -->
-      </class> <!-- UserTestScripts.UserLoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- UserTestScripts.UserRegistrationTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

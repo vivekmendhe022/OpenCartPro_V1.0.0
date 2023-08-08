@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -46,8 +47,10 @@ public class BaseClassAdmin {
 		String URL = putil.readDatafromPropertyFile("url");
 
 		if (BROWSER.equalsIgnoreCase("chrome")) {
+			ChromeOptions option = new ChromeOptions();
+			option.setBinary("D:/Softwares/chrome-win64/chrome-win64/chrome.exe");
 			WebDriverManager.chromedriver().setup();
-			d = new ChromeDriver();
+			d = new ChromeDriver(option);
 			System.out.println("===== " + BROWSER + " Browser Launch =====");
 		} else if (BROWSER.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();

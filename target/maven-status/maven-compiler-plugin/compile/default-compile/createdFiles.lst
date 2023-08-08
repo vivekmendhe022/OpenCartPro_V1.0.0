@@ -1,4 +1,5 @@
 com\generic\utilities\ListenersImplementationUtility.class
+com\generic\utilities\Listneres.class
 com\object\repository\admin\LoginAdmin.class
 com\object\repository\user\registration\RegisterAccountInfoPage.class
 com\object\repository\user\registration\RegistrationPage.class
@@ -8,6 +9,7 @@ com\generic\utilities\BaseClass.class
 com\generic\utilities\IConstatantsUtility.class
 com\generic\utilities\WebDriverUtility.class
 com\object\repository\user\registration\RegistartionInfoPage.class
+com\object\repository\admin\product\ProductsPage.class
 com\object\repository\user\login\LoginInfoPage.class
 com\generic\utilities\BaseClassUser.class
 com\generic\utilities\PropertyFileUtility.class
